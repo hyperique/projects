@@ -144,7 +144,7 @@ subjects:
   - kind: ServiceAccount
     name: linstor-csi-controller-sa
     # You must change this to the current context
-    namespace: default
+    namespace: linstor-datastore-external
 roleRef:
   kind: ClusterRole
   name: linstor-csi-provisioner-role
@@ -177,7 +177,7 @@ subjects:
   - kind: ServiceAccount
     name: linstor-csi-controller-sa
     # You must change this to the current context
-    namespace: default
+    namespace: linstor-datastore-external
 roleRef:
   kind: ClusterRole
   name: linstor-csi-attacher-role
@@ -298,7 +298,7 @@ subjects:
   - kind: ServiceAccount
     name: linstor-csi-node-sa
     # You must change this to the current context
-    namespace: default
+    namespace: linstor-datastore-external
 roleRef:
   kind: ClusterRole
   name: linstor-csi-driver-registrar-role
@@ -344,7 +344,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: linstor-csi-controller-sa
-    namespace: default
+    namespace: linstor-datastore-external
 roleRef:
   kind: ClusterRole
   name: linstor-csi-snapshotter-role
